@@ -1,0 +1,165 @@
+#currency {
+	display: block;
+	width: 80%;
+	height: 350px;
+	overflow: hidden;
+	background: white;
+	box-shadow: 0px 0px 20px rgb(180, 180, 180);
+	margin: auto;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
+@media only screen and (max-width: 950px) {
+#currency {
+	width: 90%;
+	height: 300px;
+}
+}
+
+#copyright {
+	display: block;
+	width: 100%;
+	padding-bottom: 20px;
+	position: fixed;
+	bottom: 0;
+	z-index: 3;
+	text-align: center;
+}
+
+#copyright p {
+	font-size: 12pt;
+	text-align: center;
+}
+
+#copyright p a {
+	font-size: 12pt;
+}
+
+@media only screen and (max-width: 600px) {
+#copyright {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+}
+
+#currency {
+	text-align: center;
+}
+
+#currency .left,
+#currency .right {
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	padding-top: 140px;
+}
+
+#currency p,
+#currency select {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#currency p {
+	font-size: 50pt;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#currency p .loading {
+	display: block;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	width: 30px;
+}
+
+#currency p .data {
+	display: none;
+}
+
+#currency select {
+	font-size: 30pt;
+}
+
+#currency .result {
+	pointer-events: auto;
+}
+
+@media only screen and (max-width: 900px) {
+#currency .left,
+#currency .right {
+	padding-top: 125px;
+}
+
+#currency p {
+	font-size: 30pt;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#currency select {
+	font-size: 15pt;
+}
+
+#currency p .loading {
+	margin-top: 7px;
+}
+}
+
+@media only screen and (max-width: 700px) {
+#currency {
+	overflow: show;
+}
+
+#currency .left,
+#currency .right {
+	display: block;
+	height: auto;
+	overflow: hidden;
+	padding-top: 40px;
+	overflow: show;
+	padding-bottom: 10px;
+}
+
+#currency .left {
+	padding-top: 85px;
+}
+
+#currency p {
+	font-size: 30pt;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#currency .equals {
+	display: none;
+}
+
+#currency select {
+	font-size: 15pt;
+}
+
+#currency p .loading {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 6px;
+	width: 20px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+#currency p {
+	font-size: 22pt;
+}
+
+#currency select {
+	font-size: 11pt;
+	padding: 7px;
+}
+}
