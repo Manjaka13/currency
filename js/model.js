@@ -4,10 +4,6 @@ class Model {
 		this.target="php/get_currency.php";
 	}	
 	async request(from, to) {
-		let self=this;
-		async function req() {
-			return await ajax(self.target, {from: from, to: to});
-		}
-		return req();
+		return ajax(this.target, {from: from, to: to});
 	}
 };

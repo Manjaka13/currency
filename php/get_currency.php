@@ -13,7 +13,11 @@
 		$from_currency=urlencode($from_currency);
   		$to_currency=urlencode($to_currency);
   		$query=$from_currency."_".$to_currency;
+  		ob_start();
   		$result=file_get_contents("https://free.currconv.com/api/v7/convert?q=".$query."&compact=ultra&apiKey=".$api_key);
+  		ob_clean();
+  		if($result==false)
+  			return -1;
   		$obj=json_decode($result, true);
   		$val=floatval($obj[$query]);
   		$total=$val*$amount;

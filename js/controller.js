@@ -21,8 +21,8 @@ class Controller {
 			this.model.request(this.view.from, this.view.to).then(result => {
 				self.view.data=parseInt(result)+(parseInt((result-parseInt(result))*1000)/1000);
 				self.view.set_loading(false);
-			}).catch(err => {
-				console.log(err);
+			}).catch(e => {
+				console.log(e);
 			});
 		}
 	}

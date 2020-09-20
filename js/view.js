@@ -15,6 +15,8 @@ class View {
 	set data(value) {
 		if(value>=0)
 			this.data_area.innerText=value;
+		else
+			this.data_area.innerText="???";
 	}
 	//Set loading
 	set_loading(status) {
